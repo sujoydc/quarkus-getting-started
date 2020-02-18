@@ -12,6 +12,6 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public Response hello() {
-        return "hello";
+        return Response.ok().entity("hello").build();
     }
 }
